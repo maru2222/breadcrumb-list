@@ -1,0 +1,38 @@
+/* Scss Document */
+@import "compass/reset";
+
+div{
+  padding:1em;
+}
+
+//breadcrumb list style
+
+.breadcrumb_list {
+  font-size:13px;
+  
+  li{
+    display:inline-block;
+    margin-right:0.5em;
+    
+    &:after{
+      content:">";
+      margin-left:1em;
+    }
+    
+    &:last-child {
+      &:after{
+        content:"";
+      }
+    }
+    
+    a{
+      text-decoration:none;
+      color:rgba(0,26,183,1.00);
+      
+      &:hover{
+        color:rgba(0,26,183,0.6);
+      }
+    }
+    
+  }//li
+}//breadcrumb_list
